@@ -127,8 +127,8 @@ if ( ! function_exists( 'understrap_widgets_init' ) ) {
 				'description'   => __( 'Hero slider area. Place two or more widgets here and they will slide!', 'understrap' ),
 				'before_widget' => '<div class="carousel-item">',
 				'after_widget'  => '</div>',
-				'before_title'  => '',
-				'after_title'   => '',
+				'before_title'  => '<h4 class="widget-title my-2">',
+				'after_title'   => '</h4>',
 			)
 		);
 
