@@ -16,6 +16,11 @@ $container = get_theme_mod( 'understrap_container_type' );
 ?>
 
 <div class="wrapper" id="full-width-page-wrapper">
+	
+	
+	<?php while ( have_posts() ) : the_post(); ?>
+						<?php get_template_part( 'loop-templates/topbanner', 'page' ); ?>	
+	<?php endwhile; // end of the loop. ?>
 
 	<div class="<?php echo esc_attr( $container ); ?>" id="content">
 
